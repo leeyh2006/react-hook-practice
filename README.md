@@ -1,2 +1,5 @@
 ### react-hook-practice
-react 연습장 ^^
+- useState
+- useEffect
+- useReducer
+- useMemo
