@@ -1,9 +1,10 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState, useEffect, Fragment} from 'react';
 import './App.css';
 import './Counter';
 import Counter from "./Counter";
 import Info from './Info';
 import ContextSample from './ContextSample';
+import Average from "./Average";
 
 
 const App = () => {
@@ -11,7 +12,12 @@ const App = () => {
     const [visible, setVisible] = useState(false);
 
     return (
-        <ContextSample/>
+        <Fragment>
+            <Counter/>
+            <Info/>
+            <Average/>
+        </Fragment>
+
 
     );
 }
